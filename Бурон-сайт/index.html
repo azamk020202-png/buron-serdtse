@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>buron_serdtse — коттедж в горах Осетии, посёлок Бурон</title>
+<meta name="description" content="Уютный коттедж в горах Северной Осетии, посёлок Бурон. Вид на горы, река у обрыва, мангал и беседка. Бронирование посуточно." />
+
+<!-- Иконка вкладки (favicon) — горы в охристом квадрате -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23A05A1E'/%3E%3Cpath d='M4 24l7-13 4.5 8 2.5-4 8 9z' fill='%23fff'/%3E%3C/svg%3E" />
+
+<!-- Open Graph — красивое превью при отправке ссылки в WhatsApp / Telegram / соцсети -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Коттедж «Бурон Сердце» — горы Северной Осетии" />
+<meta property="og:description" content="Уютный коттедж в посёлке Бурон: вид на горы, река у обрыва, мангал и беседка. Бронирование посуточно." />
+<meta property="og:url" content="https://buron-serdtse.netlify.app/" />
+<meta property="og:image" content="https://buron-serdtse.netlify.app/photos/IMG-20260713-WA0007.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<!-- Адрес сайта: https://buron-serdtse.netlify.app/
+     Если когда-нибудь смените адрес (свой домен и т.п.) — обновите og:url и og:image выше. -->
+
+<!-- Шрифты Playfair Display + Manrope подключены ЛОКАЛЬНО (файлы в папке fonts/),
+     без загрузки от Google — чтобы сайт быстро работал в России без VPN. -->
+
+
+<style>
+/* ---------- Локальные шрифты (без Google, работают в РФ без VPN) ---------- */
+@font-face{font-family:'Manrope';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/manrope-400-cyrillic-ext.woff2') format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/manrope-400-cyrillic.woff2') format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/manrope-400-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:600;font-display:swap;src:url('fonts/manrope-600-cyrillic-ext.woff2') format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:600;font-display:swap;src:url('fonts/manrope-600-cyrillic.woff2') format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:600;font-display:swap;src:url('fonts/manrope-600-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:700;font-display:swap;src:url('fonts/manrope-700-cyrillic-ext.woff2') format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:700;font-display:swap;src:url('fonts/manrope-700-cyrillic.woff2') format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:700;font-display:swap;src:url('fonts/manrope-700-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:800;font-display:swap;src:url('fonts/manrope-800-cyrillic-ext.woff2') format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:800;font-display:swap;src:url('fonts/manrope-800-cyrillic.woff2') format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:800;font-display:swap;src:url('fonts/manrope-800-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Playfair Display';font-style:normal;font-weight:600;font-display:swap;src:url('fonts/playfairdisplay-600-cyrillic.woff2') format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'Playfair Display';font-style:normal;font-weight:600;font-display:swap;src:url('fonts/playfairdisplay-600-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Playfair Display';font-style:normal;font-weight:700;font-display:swap;src:url('fonts/playfairdisplay-700-cyrillic.woff2') format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'Playfair Display';font-style:normal;font-weight:700;font-display:swap;src:url('fonts/playfairdisplay-700-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   ⚙️  КОНФИГ — CSS-переменные с фото. Меняйте здесь один URL, чтобы поменять
+       картинку по всему сайту. Владелец подставляет реальные фото коттеджа.
+   ═══════════════════════════════════════════════════════════════════════════ */
+:root{
+  /* --- ФОТО (замените ссылки на свои). Формат: url("путь/или/ссылка") --- */
+  --img-hero:        url("photos/IMG-20260713-WA0007.jpg");  /* большое фото гор в шапке */
+  --img-about:       url("photos/IMG-20260713-WA0008.jpg");  /* фото коттеджа в блоке «О коттедже» */
+  /* Галерея — 6 фото (пейзажи + коттедж). Меняйте по одной ссылке. */
+  --img-gallery-1:   url("photos/IMG-20260713-WA0011.jpg");  /* туман в горах */
+  --img-gallery-2:   url("photos/IMG-20260713-WA0010.jpg");  /* лес / солнце */
+  --img-gallery-3:   url("photos/IMG-20260713-WA0009.jpg");  /* горное озеро */
+  --img-gallery-4:   url("photos/IMG-20260713-WA0006.jpg");  /* интерьер дома */
+  --img-gallery-5:   url("photos/IMG-20260713-WA0005.jpg");  /* река в горах */
+  --img-gallery-6:   url("photos/IMG-20260714-WA0002.jpg");  /* водопад рядом с коттеджем */
+  --img-cta:         url("photos/IMG-20260714-WA0011.jpg");  /* фото коттеджа — фон блока перед бронированием */
+
+  /* --- ТЁПЛАЯ «ДЕРЕВЯННАЯ» ПАЛИТРА --- */
+  --bg:        #FBF7F0;   /* светлый тёплый фон */
+  --surface:   #F3EADF;   /* беж — карточки */
+  --surface-2: #EADFCF;   /* чуть темнее беж */
+  --ink:       #2E2620;   /* кофейный тёмный — основной текст */
+  --ink-soft:  #6B5D4F;   /* приглушённый текст */
+  --wood:      #6B4E3D;   /* дерево / коричневый */
+  --accent:    #A05A1E;   /* охра — кнопки/акценты (белый текст ~4.7:1) */
+  --accent-dk: #834714;   /* охра тёмная — hover */
+  --moss:      #5B6B4A;   /* зелёный мох */
+  --border:    #E0D3C0;   /* мягкая граница */
+  --danger:    #B23A2E;   /* ошибки */
+
+  --radius:    18px;
+  --shadow:    0 10px 30px rgba(46,38,32,.10);
+  --shadow-lg: 0 24px 60px rgba(46,38,32,.18);
+  --maxw:      1160px;
+  --ease:      cubic-bezier(.22,.61,.36,1);
+}
+
+/* ---------- База ---------- */
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:"Manrope",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+  color:var(--ink);
+  background:var(--bg);
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+h1,h2,h3{font-family:"Playfair Display",Georgia,serif;font-weight:600;line-height:1.15;margin:0 0 .4em}
+h2{font-size:clamp(1.8rem,4vw,2.7rem)}
+h3{font-size:1.25rem}
+p{margin:0 0 1em}
+a{color:inherit}
+img{max-width:100%;display:block}
+.container{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 22px}
+.eyebrow{
+  display:inline-block;font-size:.82rem;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--accent);font-weight:700;margin-bottom:.6em;
+}
+.lead{color:var(--ink-soft);font-size:1.08rem;max-width:62ch}
+section{padding:clamp(56px,9vw,110px) 0}
+
+/* ---------- Кнопки ---------- */
+.btn{
+  display:inline-flex;align-items:center;gap:.55em;justify-content:center;
+  font-weight:700;font-size:1rem;cursor:pointer;border:0;
+  padding:15px 30px;border-radius:999px;text-decoration:none;
+  transition:transform .2s var(--ease),box-shadow .2s var(--ease),background .2s var(--ease);
+  min-height:48px;
+}
+.btn-primary{background:var(--accent);color:#fff;box-shadow:0 8px 22px rgba(160,90,30,.32)}
+.btn-primary:hover{background:var(--accent-dk);transform:translateY(-2px);box-shadow:0 12px 30px rgba(160,90,30,.4)}
+.btn-primary:active{transform:translateY(0)}
+.btn-ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.7)}
+.btn-ghost:hover{background:rgba(255,255,255,.14);transform:translateY(-2px)}
+.btn:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible,button:focus-visible{
+  outline:3px solid var(--accent);outline-offset:3px;border-radius:12px;
+}
+
+/* ---------- Хедер ---------- */
+header{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  transition:background .3s var(--ease),box-shadow .3s var(--ease),padding .3s var(--ease);
+  padding:18px 0;
+}
+header.scrolled{background:rgba(251,247,240,.9);backdrop-filter:blur(10px);box-shadow:0 4px 20px rgba(46,38,32,.08);padding:10px 0}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:10px;font-family:"Playfair Display",serif;font-weight:700;font-size:1.25rem;color:#fff;text-decoration:none;transition:color .3s}
+header.scrolled .brand{color:var(--ink)}
+.brand svg{flex:0 0 auto}
+.nav-links{display:flex;gap:26px;align-items:center}
+.nav-links a{color:#fff;text-decoration:none;font-weight:600;font-size:.96rem;opacity:.92;transition:opacity .2s,color .3s}
+.nav-links a:hover{opacity:1}
+header.scrolled .nav-links a{color:var(--ink)}
+.nav-cta{background:var(--accent);color:#fff!important;padding:10px 20px;border-radius:999px;opacity:1!important;transition:background .2s,transform .2s}
+.nav-cta:hover{background:var(--accent-dk);transform:translateY(-1px)}
+.burger{display:none;background:none;border:0;cursor:pointer;padding:8px;color:#fff}
+header.scrolled .burger{color:var(--ink)}
+header.menu-open .burger{color:var(--ink)}   /* меню открыто — фон светлый, делаем иконку тёмной */
+
+/* ---------- Hero ---------- */
+.hero{
+  position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:center;
+  color:#fff;padding-top:90px;
+  background:linear-gradient(180deg,rgba(30,22,15,.5),rgba(30,22,15,.62)),var(--img-hero);
+  background-size:cover;background-position:center;
+}
+.hero-inner{max-width:760px}
+.hero h1{font-size:clamp(2.4rem,6.5vw,4.6rem);font-weight:700;color:#fff;text-shadow:0 2px 30px rgba(0,0,0,.35)}
+.hero p{font-size:clamp(1.05rem,2.4vw,1.35rem);color:rgba(255,255,255,.94);max-width:56ch;text-shadow:0 1px 14px rgba(0,0,0,.35)}
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
+.hero-badges{display:flex;flex-wrap:wrap;gap:22px;margin-top:38px;color:rgba(255,255,255,.92);font-weight:600;font-size:.95rem}
+.hero-badges span{display:flex;align-items:center;gap:8px}
+.scroll-hint{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);color:rgba(255,255,255,.8);animation:bob 2s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,10px)}}
+
+/* ---------- Разделительная фраза ---------- */
+.quote{background:var(--wood);color:#fff;text-align:center}
+.quote p{font-family:"Playfair Display",serif;font-size:clamp(1.3rem,3vw,2rem);font-style:italic;max-width:22ch;margin:0 auto;line-height:1.4}
+.quote span{display:block;margin-top:14px;font-family:"Manrope";font-style:normal;font-size:.9rem;letter-spacing:.16em;text-transform:uppercase;opacity:.75}
+
+/* ---------- О коттедже ---------- */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,64px);align-items:center}
+.about-photo{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-lg);aspect-ratio:4/5;background:var(--img-about) center/cover;position:relative}
+.about-photo::after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 0 1px rgba(255,255,255,.15)}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:26px}
+.fact{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:16px 18px}
+.fact b{font-family:"Playfair Display",serif;font-size:1.5rem;display:block;color:var(--wood)}
+.fact small{color:var(--ink-soft);font-size:.9rem}
+
+/* ---------- Галерея ---------- */
+.gallery{background:var(--surface)}
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:220px;gap:14px}
+.gallery-grid figure{margin:0;border-radius:14px;overflow:hidden;position:relative;box-shadow:var(--shadow)}
+.gallery-grid .ph{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform .6s var(--ease)}
+.gallery-grid figure:hover .ph{transform:scale(1.07)}
+.gallery-grid figure::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(0,0,0,.35));opacity:0;transition:opacity .3s}
+.gallery-grid figure:hover::after{opacity:1}
+.g1{background-image:var(--img-gallery-1)} .g2{background-image:var(--img-gallery-2)}
+.g3{background-image:var(--img-gallery-3)} .g4{background-image:var(--img-gallery-4)}
+.g5{background-image:var(--img-gallery-5)} .g6{background-image:var(--img-gallery-6)}
+.gallery-grid figure:nth-child(1){grid-column:span 2}
+.gallery-grid figure:nth-child(4){grid-row:span 2}
+
+/* ---------- Удобства ---------- */
+.amenities-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.rules-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;max-width:760px;margin:0 auto}
+@media(max-width:560px){.rules-grid{grid-template-columns:1fr}}
+.amenity{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:26px 22px;transition:transform .25s var(--ease),box-shadow .25s var(--ease)}
+.amenity:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.amenity .ic{width:52px;height:52px;border-radius:14px;background:var(--surface-2);display:flex;align-items:center;justify-content:center;color:var(--accent);margin-bottom:16px}
+.amenity h3{margin-bottom:.25em;font-size:1.1rem}
+.amenity p{color:var(--ink-soft);font-size:.94rem;margin:0}
+
+/* ---------- Цены ---------- */
+.price{background:var(--moss);color:#fff}
+.price-card{max-width:520px;margin:0 auto;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.22);border-radius:24px;padding:clamp(30px,5vw,48px);text-align:center;backdrop-filter:blur(6px)}
+.price-amount{font-family:"Playfair Display",serif;font-size:clamp(3rem,9vw,4.5rem);font-weight:700;line-height:1}
+.price-amount small{font-size:1.1rem;font-family:"Manrope";font-weight:600;opacity:.85}
+.price-note{opacity:.9;margin:14px auto 26px;max-width:40ch}
+.price-list{list-style:none;padding:0;margin:0 0 28px;text-align:left;display:inline-block}
+.price-list li{display:flex;gap:10px;align-items:flex-start;margin-bottom:10px}
+.price-list svg{flex:0 0 auto;margin-top:3px}
+
+/* ---------- CTA полоса перед бронью ---------- */
+.cta-band{position:relative;color:#fff;text-align:center;
+  background:linear-gradient(rgba(30,22,15,.55),rgba(30,22,15,.6)),var(--img-cta);
+  background-size:cover;background-position:center}
+.cta-band h2{color:#fff}
+.cta-band p{max-width:52ch;margin:0 auto 26px;color:rgba(255,255,255,.92)}
+
+/* ---------- Бронирование / форма ---------- */
+.booking{background:var(--surface)}
+.booking-wrap{display:grid;grid-template-columns:1fr 1.15fr;gap:clamp(28px,5vw,54px);align-items:start}
+.booking-info h2{margin-bottom:.3em}
+.pay-note{background:var(--bg);border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:12px;padding:18px 20px;margin-top:22px}
+.pay-note b{color:var(--wood)}
+.card-form{background:var(--bg);border:1px solid var(--border);border-radius:24px;padding:clamp(22px,4vw,34px);box-shadow:var(--shadow)}
+.field{margin-bottom:16px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+label{display:block;font-weight:600;font-size:.9rem;margin-bottom:6px}
+label .req{color:var(--accent)}
+input,select,textarea{
+  width:100%;font-family:inherit;font-size:1rem;color:var(--ink);
+  background:#fff;border:1.5px solid var(--border);border-radius:12px;
+  padding:13px 14px;min-height:48px;transition:border-color .2s,box-shadow .2s;
+}
+input:focus,select:focus,textarea:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(160,90,30,.14);outline:none}
+textarea{min-height:92px;resize:vertical}
+.err{color:var(--danger);font-size:.83rem;margin-top:5px;display:none}
+.field.invalid input,.field.invalid select{border-color:var(--danger)}
+.field.invalid .err{display:block}
+.summary{background:var(--surface);border:1px dashed var(--border);border-radius:14px;padding:16px 18px;margin:6px 0 18px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+.summary .nights{color:var(--ink-soft);font-size:.95rem}
+.summary .total{font-family:"Playfair Display",serif;font-size:1.7rem;font-weight:700;color:var(--wood)}
+.form-hint{font-size:.83rem;color:var(--ink-soft);margin-top:12px;text-align:center}
+.form-status{display:none;margin-top:14px;padding:12px 14px;border-radius:12px;font-size:.92rem;font-weight:600;text-align:center}
+.form-status.error{display:block;background:#fbe9e7;color:var(--danger)}
+
+/* ---------- Как добраться ---------- */
+.location-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,44px);align-items:stretch}
+.map-frame{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);min-height:340px;border:1px solid var(--border)}
+.map-frame iframe{width:100%;height:100%;min-height:340px;border:0;display:block}
+.route-list{list-style:none;padding:0;margin:20px 0 0}
+.route-list li{display:flex;gap:14px;margin-bottom:18px}
+.route-list .num{flex:0 0 auto;width:34px;height:34px;border-radius:50%;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700}
+.route-list b{display:block}
+.route-list small{color:var(--ink-soft)}
+
+/* ---------- Подвал ---------- */
+footer{background:var(--ink);color:rgba(255,255,255,.85);padding:56px 0 30px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:34px}
+footer h3{color:#fff;font-family:"Playfair Display",serif}
+footer a{color:rgba(255,255,255,.85);text-decoration:none;transition:color .2s}
+footer a:hover{color:#fff}
+.foot-contacts p{margin:0 0 10px;display:flex;align-items:center;gap:10px}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.14);margin-top:38px;padding-top:20px;font-size:.85rem;opacity:.7;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+/* ---------- Модалка подтверждения ---------- */
+.modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;padding:20px}
+.modal.open{display:flex}
+.modal-backdrop{position:absolute;inset:0;background:rgba(30,22,15,.55);backdrop-filter:blur(4px)}
+.modal-card{position:relative;background:var(--bg);border-radius:24px;max-width:460px;width:100%;padding:36px 30px;text-align:center;box-shadow:var(--shadow-lg);
+  transform:translateY(20px) scale(.96);opacity:0;transition:transform .35s var(--ease),opacity .35s var(--ease)}
+.modal.open .modal-card{transform:translateY(0) scale(1);opacity:1}
+.modal .check{width:74px;height:74px;border-radius:50%;background:var(--moss);color:#fff;display:flex;align-items:center;justify-content:center;margin:0 auto 18px}
+.modal-details{background:var(--surface);border-radius:14px;padding:16px 18px;text-align:left;margin:18px 0 22px;font-size:.95rem}
+.modal-details div{display:flex;justify-content:space-between;gap:12px;padding:5px 0;border-bottom:1px solid var(--border)}
+.modal-details div:last-child{border:0;font-weight:700;color:var(--wood)}
+.modal-close{position:absolute;top:14px;right:14px;background:none;border:0;cursor:pointer;color:var(--ink-soft);padding:6px}
+
+/* ---------- Reveal-анимации при скролле ---------- */
+.js .reveal{opacity:0;transform:translateY(28px);transition:opacity .6s var(--ease),transform .6s var(--ease)}
+.js .reveal.in{opacity:1;transform:none}
+.reveal.d1{transition-delay:.08s}.reveal.d2{transition-delay:.16s}
+.reveal.d3{transition-delay:.24s}.reveal.d4{transition-delay:.32s}
+
+/* ---------- Адаптив ---------- */
+@media(max-width:900px){
+  .nav-links{position:fixed;inset:0 0 auto 0;top:0;flex-direction:column;background:var(--bg);
+    padding:86px 24px 30px;box-shadow:var(--shadow-lg);transform:translateY(-100%);transition:transform .35s var(--ease);gap:6px}
+  .nav-links.open{transform:translateY(0)}
+  .nav-links a{color:var(--ink);width:100%;padding:12px 4px;border-bottom:1px solid var(--border)}
+  .burger{display:block;z-index:2}
+  .about-grid,.booking-wrap,.location-grid{grid-template-columns:1fr}
+  .about-photo{aspect-ratio:16/11;max-height:420px}
+  .amenities-grid{grid-template-columns:1fr 1fr}
+  .foot-grid{grid-template-columns:1fr}
+  .cta-band{background-attachment:scroll}
+}
+@media(max-width:560px){
+  .gallery-grid{grid-template-columns:1fr 1fr;grid-auto-rows:150px}
+  .gallery-grid figure:nth-child(1){grid-column:span 2}
+  .gallery-grid figure:nth-child(4){grid-row:span 1}
+  .amenities-grid{grid-template-columns:1fr}
+  .row2{grid-template-columns:1fr}
+  .facts{grid-template-columns:1fr}
+}
+
+/* ---------- Уважаем reduced-motion ---------- */
+/* Плавающая кнопка WhatsApp */
+.wa-float{position:fixed;right:20px;bottom:20px;z-index:60;width:60px;height:60px;border-radius:50%;
+  background:#25D366;display:flex;align-items:center;justify-content:center;
+  box-shadow:0 8px 24px rgba(37,211,102,.45);color:#fff;transition:transform .2s,box-shadow .2s;
+  animation:waPulse 2.4s ease-out infinite}
+.wa-float:hover{transform:scale(1.08);box-shadow:0 10px 30px rgba(37,211,102,.6)}
+.wa-float svg{width:32px;height:32px}
+@keyframes waPulse{0%{box-shadow:0 8px 24px rgba(37,211,102,.45),0 0 0 0 rgba(37,211,102,.5)}
+  70%{box-shadow:0 8px 24px rgba(37,211,102,.45),0 0 0 16px rgba(37,211,102,0)}
+  100%{box-shadow:0 8px 24px rgba(37,211,102,.45),0 0 0 0 rgba(37,211,102,0)}}
+@media(max-width:560px){.wa-float{width:54px;height:54px;right:16px;bottom:16px}.wa-float svg{width:29px;height:29px}}
+
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+  .js .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════════════ ХЕДЕР ═══════════════ -->
+<header id="header">
+  <div class="container nav">
+    <a href="#top" class="brand" aria-label="buron_serdtse — на главную">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 20l6-14 4 8 3-5 5 11" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></svg>
+      buron_serdtse
+    </a>
+    <nav class="nav-links" id="navLinks" aria-label="Основная навигация">
+      <a href="#about">О коттедже</a>
+      <a href="#gallery">Галерея</a>
+      <a href="#amenities">Удобства</a>
+      <a href="#price">Цены</a>
+      <a href="#rules">Правила</a>
+      <a href="#location">Как добраться</a>
+      <a href="#booking" class="nav-cta">Забронировать</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</header>
+
+<span id="top"></span>
+
+<!-- ═══════════════ HERO ═══════════════ -->
+<section class="hero" id="hero">
+  <div class="container hero-inner">
+    <span class="eyebrow" style="color:#f0d9b8">Северная Осетия · посёлок Бурон</span>
+    <h1>Коттедж «buron_serdtse»<br>в объятиях гор</h1>
+    <p>Проснуться под шум горной реки, встретить рассвет над вершинами Кавказа и вдохнуть чистый воздух тишины. Тёплый уютный дом ждёт именно вас.</p>
+    <div class="hero-actions">
+      <a href="#booking" class="btn btn-primary">Забронировать</a>
+      <a href="#gallery" class="btn btn-ghost">Смотреть фото</a>
+    </div>
+    <div class="hero-badges">
+      <span><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 20l6-14 4 8 3-5 5 11" stroke="#f0d9b8" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> Вид на горы</span>
+      <span><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 12c3-4 6 4 9 0s6-4 9 0M3 18c3-4 6 4 9 0s6-4 9 0" stroke="#f0d9b8" stroke-width="1.6" stroke-linecap="round"/></svg> Река у обрыва</span>
+      <span><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 3l2.5 5 5.5.6-4 3.9 1 5.5L12 15.6 7.5 18l1-5.5-4-3.9L10 8z" stroke="#f0d9b8" stroke-width="1.4" stroke-linejoin="round"/></svg> Мангал и беседка</span>
+    </div>
+  </div>
+  <div class="scroll-hint" aria-hidden="true">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M6 13l6 6 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </div>
+</section>
+
+<!-- ═══════════════ ФРАЗА-РАЗДЕЛИТЕЛЬ ═══════════════ -->
+<section class="quote">
+  <div class="container reveal">
+    <p>«Горы отдают тишину тем, кто приходит без спешки»</p>
+    <span>Осетия · Кавказ</span>
+  </div>
+</section>
+
+<!-- ═══════════════ О КОТТЕДЖЕ ═══════════════ -->
+<section id="about">
+  <div class="container about-grid">
+    <div class="about-photo reveal" role="img" aria-label="Коттедж в горах"></div>
+    <div class="about-info reveal d1">
+      <span class="eyebrow">О коттедже</span>
+      <h2>Дом, где горы становятся ближе</h2>
+      <p class="lead">«buron_serdtse» — уютный коттедж на два этажа в горном посёлке Бурон. Каждый этаж — это отдельное пространство до&nbsp;4&nbsp;гостей с собственной атмосферой тепла и покоя.</p>
+      <p class="lead">Идеально для семьи, компании друзей или тех, кто хочет сбежать от городского шума к рекам и вершинам Осетии. Балкон на втором этаже, беседка с мангалом и вид, ради которого стоит приехать.</p>
+      <div class="facts">
+        <div class="fact"><b>2 этажа</b><small>каждый бронируется отдельно</small></div>
+        <div class="fact"><b>до 4</b><small>гостей на каждом этаже</small></div>
+        <div class="fact"><b>24 ч</b><small>минимальный срок брони</small></div>
+        <div class="fact"><b>13:00 / 12:00</b><small>заезд / выезд</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ ГАЛЕРЕЯ ═══════════════ -->
+<section class="gallery" id="gallery">
+  <div class="container">
+    <div class="reveal" style="text-align:center;margin-bottom:40px">
+      <span class="eyebrow">Галерея</span>
+      <h2>Горы, река и тёплое дерево</h2>
+      <p class="lead" style="margin:0 auto">Пейзажи Бурона и атмосфера коттеджа.</p>
+    </div>
+    <div class="gallery-grid reveal d1">
+      <figure><div class="ph g1"></div></figure>
+      <figure><div class="ph g2"></div></figure>
+      <figure><div class="ph g3"></div></figure>
+      <figure><div class="ph g4"></div></figure>
+      <figure><div class="ph g5"></div></figure>
+      <figure><div class="ph g6"></div></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ УДОБСТВА ═══════════════ -->
+<section id="amenities">
+  <div class="container">
+    <div class="reveal" style="text-align:center;margin-bottom:44px">
+      <span class="eyebrow">Удобства</span>
+      <h2>Всё для уютного отдыха</h2>
+    </div>
+    <div class="amenities-grid">
+      <div class="amenity reveal">
+        <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M2 20l7-15 4 9 3-5 6 11" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Вид на горы</h3>
+        <p>Панорама кавказских вершин прямо из окон и с балкона.</p>
+      </div>
+      <div class="amenity reveal d1">
+        <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M2 10c3-4 7 4 10 0s7-4 10 0M2 16c3-4 7 4 10 0s7-4 10 0" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></div>
+        <h3>Река у обрыва</h3>
+        <p>Горная река шумит совсем рядом — звук, под который засыпаешь.</p>
+      </div>
+      <div class="amenity reveal d2">
+        <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 3c2 3 2 5 0 7-2-2-2-4 0-7z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M5 21h14M7 21c0-4 2-6 5-6s5 2 5 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+        <h3>Мангал и беседка</h3>
+        <p>Уютная беседка с мангалом — для шашлыка и долгих вечеров.</p>
+      </div>
+      <div class="amenity reveal d3">
+        <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M4 21V10l8-6 8 6v11" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M14 21v-5h4v5M15 8h4v4h-4z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+        <h3>Балкон на 2-м этаже</h3>
+        <p>Личный балкон с видом — идеально для утреннего кофе.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ ЦЕНЫ ═══════════════ -->
+<section class="price" id="price">
+  <div class="container">
+    <div class="reveal" style="text-align:center;margin-bottom:38px">
+      <span class="eyebrow" style="color:#f0d9b8">Цены</span>
+      <h2 style="color:#fff">Стоимость проживания</h2>
+    </div>
+    <div class="price-card reveal d1">
+      <!-- Значение дублирует CONFIG.PRICE_PER_NIGHT (JS перезапишет его). Держите числа одинаковыми. -->
+      <div class="price-amount"><span id="priceDisplay">3500</span> ₽ <small>/ сутки за этаж</small></div>
+      <p class="price-note">Каждый этаж (до&nbsp;4&nbsp;гостей) бронируется отдельно. Минимальный срок — 1&nbsp;сутки.</p>
+      <ul class="price-list">
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4 10-11" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Заезд с 13:00, выезд до 12:00</li>
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4 10-11" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Беседка и мангал включены</li>
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4 10-11" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Предоплата по СБП после подтверждения</li>
+      </ul>
+      <div><a href="#booking" class="btn btn-primary">Оставить заявку</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ ПРАВИЛА ПРОЖИВАНИЯ ═══════════════ -->
+<section id="rules">
+  <div class="container">
+    <div class="reveal" style="text-align:center;margin-bottom:44px">
+      <span class="eyebrow">Правила</span>
+      <h2>Правила проживания</h2>
+    </div>
+    <div class="rules-grid">
+      <div class="amenity reveal">
+        <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M4 12a8 8 0 1 0 16 0 8 8 0 0 0-16 0z" stroke="currentColor" stroke-width="1.7"/><path d="M6.3 6.3l11.4 11.4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></div>
+        <h3>Без животных</h3>
+        <p>Проживание с домашними животными, к сожалению, не допускается.</p>
+      </div>
+      <div class="amenity reveal d1">
+        <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M4 12a8 8 0 1 0 16 0 8 8 0 0 0-16 0z" stroke="currentColor" stroke-width="1.7"/><path d="M6.3 6.3l11.4 11.4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M9 15h6M9 12h6" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg></div>
+        <h3>Не курить в комнатах</h3>
+        <p>Курение в помещениях запрещено — пожалуйста, только на балконе или у беседки.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ CTA-ПОЛОСА ═══════════════ -->
+<section class="cta-band">
+  <div class="container reveal">
+    <h2>Тишина, звёзды и запах костра</h2>
+    <p>Забронируйте этаж заранее — лучшие даты в горах разбирают быстро.</p>
+    <a href="#booking" class="btn btn-primary">Забронировать сейчас</a>
+  </div>
+</section>
+
+<!-- ═══════════════ БРОНИРОВАНИЕ ═══════════════ -->
+<section class="booking" id="booking">
+  <div class="container booking-wrap">
+    <div class="booking-info reveal">
+      <span class="eyebrow">Бронирование</span>
+      <h2>Оставьте заявку</h2>
+      <p class="lead">Заполните форму — мы посчитаем стоимость и свяжемся с вами для подтверждения дат.</p>
+      <div class="pay-note">
+        <p style="margin:0 0 6px"><b>Как проходит оплата</b></p>
+        <p style="margin:0">Онлайн-оплаты на сайте нет. После подтверждения брони мы свяжемся с вами и пришлём реквизиты для предоплаты переводом по&nbsp;СБП. Никаких данных карт вводить не нужно.</p>
+      </div>
+    </div>
+
+    <form class="card-form reveal d1" id="bookingForm" novalidate>
+      <div class="row2">
+        <div class="field">
+          <label for="checkin">Дата заезда <span class="req">*</span></label>
+          <input type="date" id="checkin" name="Заезд" required />
+          <div class="err">Укажите дату заезда</div>
+        </div>
+        <div class="field">
+          <label for="checkout">Дата выезда <span class="req">*</span></label>
+          <input type="date" id="checkout" name="Выезд" required />
+          <div class="err">Выезд должен быть позже заезда</div>
+        </div>
+      </div>
+
+      <div class="row2">
+        <div class="field">
+          <label for="floors">Сколько этажей <span class="req">*</span></label>
+          <select id="floors" name="Этажи" required>
+            <option value="1">1 этаж</option>
+            <option value="2">2 этажа</option>
+          </select>
+          <div class="err">Выберите количество этажей</div>
+        </div>
+        <div class="field">
+          <label for="guests">Гостей <span class="req">*</span></label>
+          <input type="number" id="guests" name="Гостей" min="1" max="4" value="2" required />
+          <div class="err" id="guestsErr">Не больше 4 гостей на этаж</div>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="name">Имя <span class="req">*</span></label>
+        <input type="text" id="name" name="Имя" autocomplete="name" placeholder="Как к вам обращаться" required />
+        <div class="err">Введите имя</div>
+      </div>
+
+      <div class="field">
+        <label for="phone">Телефон <span class="req">*</span></label>
+        <input type="tel" id="phone" name="Телефон" autocomplete="tel" inputmode="tel" placeholder="+7 900 000 00 00" required />
+        <div class="err">Введите корректный телефон</div>
+      </div>
+
+      <div class="field">
+        <label for="city">Откуда вы (город) <span class="req">*</span></label>
+        <input type="text" id="city" name="Город" autocomplete="address-level2" placeholder="Например, Владикавказ" required />
+        <div class="err">Укажите город</div>
+      </div>
+
+      <div class="field">
+        <label for="comment">Комментарий</label>
+        <textarea id="comment" name="Комментарий" placeholder="Пожелания, вопросы, время приезда…"></textarea>
+      </div>
+
+      <!-- Итоговая сумма (считается автоматически) -->
+      <div class="summary" aria-live="polite">
+        <span class="nights" id="nightsText">Выберите даты, чтобы увидеть сумму</span>
+        <span class="total" id="totalText">—</span>
+      </div>
+
+      <!-- Скрытые поля для письма (заполняются JS) -->
+      <input type="hidden" name="Ночей" id="hiddenNights" />
+      <input type="hidden" name="Сумма" id="hiddenTotal" />
+
+      <button type="submit" class="btn btn-primary" id="submitBtn" style="width:100%">Забронировать</button>
+      <div class="form-status" id="formStatus"></div>
+    </form>
+  </div>
+</section>
+
+<!-- ═══════════════ КАК ДОБРАТЬСЯ ═══════════════ -->
+<section id="location">
+  <div class="container">
+    <div class="reveal" style="margin-bottom:34px">
+      <span class="eyebrow">Как добраться</span>
+      <h2>Посёлок Бурон, Северная Осетия</h2>
+    </div>
+    <div class="location-grid">
+      <div class="map-frame reveal">
+        <!-- Карта Яндекс/2ГИС. Замените ссылку на точную точку коттеджа. -->
+        <iframe title="Карта — посёлок Бурон" loading="lazy"
+          src="https://yandex.ru/map-widget/v1/?text=%D0%91%D1%83%D1%80%D0%BE%D0%BD%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%9B%D0%B5%D0%BD%D0%B8%D0%BD%D0%B0%2C%2016%D0%90&z=17"></iframe>
+      </div>
+      <div class="reveal d1">
+        <p class="lead">Бурон — горный посёлок в Алагирском районе, вдоль Транскавказской магистрали (Транскам), в живописном ущелье реки Ардон.</p>
+        <ul class="route-list">
+          <li><span class="num">1</span><div><b>Из Владикавказа</b><small>≈ 70 км на юго-запад по Транскаму, около 1,5 часа в пути.</small></div></li>
+          <li><span class="num">2</span><div><b>Ориентир</b><small>Двигайтесь по трассе через Алагир в сторону Цея — Бурон стоит прямо на маршруте.</small></div></li>
+          <li><span class="num">3</span><div><b>Адрес</b><small>посёлок Бурон, улица Ленина, 16А — точка на карте выше.</small></div></li>
+        </ul>
+        <a href="#booking" class="btn btn-primary" style="margin-top:8px">Забронировать</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ ПОДВАЛ ═══════════════ -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <h3>buron_serdtse</h3>
+        <p style="opacity:.85;max-width:34ch">Уютный горный коттедж в Северной Осетии. Река, вершины и тишина — в посёлке Бурон.</p>
+      </div>
+      <div class="foot-contacts">
+        <h3>Контакты</h3>
+        <!-- Телефон берётся из конфига JS ниже -->
+        <p><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 5c0 9 6 15 15 15l1-4-5-2-2 2c-2-1-4-3-5-5l2-2-2-5z" stroke="#fff" stroke-width="1.5" stroke-linejoin="round"/></svg> <a id="footPhone" href="#">+7 988 927 00 00</a></p>
+        <p><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M3 20l6-14 4 8 3-5 5 11" stroke="#fff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Посёлок Бурон, ул. Ленина, 16А, РСО–Алания</p>
+      </div>
+      <div>
+        <h3>Разделы</h3>
+        <p><a href="#about">О коттедже</a></p>
+        <p><a href="#gallery">Галерея</a></p>
+        <p><a href="#price">Цены</a></p>
+        <p><a href="#booking">Бронирование</a></p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="year"></span> Коттедж «buron_serdtse» · посёлок Бурон</span>
+      <span>Сделано с теплом ♦ горы Осетии</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Плавающая кнопка WhatsApp -->
+<a class="wa-float" id="waFloat" href="#" target="_blank" rel="noopener" aria-label="Написать в WhatsApp" title="Написать в WhatsApp">
+  <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16.02 3C9.4 3 4.03 8.37 4.03 15c0 2.1.55 4.15 1.6 5.96L4 29l8.22-1.6a11.9 11.9 0 0 0 5.8 1.48h.01c6.62 0 11.99-5.37 11.99-12S22.64 3 16.02 3zm0 21.9h-.01a9.9 9.9 0 0 1-5.05-1.38l-.36-.22-4.88.95.98-4.76-.24-.38a9.86 9.86 0 0 1-1.52-5.28c0-5.47 4.46-9.92 9.94-9.92 2.65 0 5.15 1.04 7.02 2.91a9.85 9.85 0 0 1 2.9 7.02c0 5.48-4.45 9.94-9.92 9.94zm5.45-7.44c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35z"/></svg>
+</a>
+
+<!-- ═══════════════ МОДАЛКА ПОДТВЕРЖДЕНИЯ ═══════════════ -->
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-card">
+    <button class="modal-close" data-close aria-label="Закрыть">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <div class="check"><svg width="38" height="38" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4 10-11" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <h2 id="modalTitle" style="font-size:1.6rem">Заявка принята!</h2>
+    <p style="color:var(--ink-soft)">Спасибо! Мы свяжемся с вами по телефону для подтверждения и пришлём реквизиты для предоплаты по СБП.</p>
+    <div class="modal-details" id="modalDetails"></div>
+    <button class="btn btn-primary" data-close style="width:100%">Хорошо</button>
+  </div>
+</div>
+
+<script>
+/* Прогрессивное улучшение: помечаем, что JS работает. Секции скрыты (opacity:0)
+   только при наличии класса .js — если скрипт не выполнится, контент останется видимым. */
+document.documentElement.classList.add('js');
+function revealAllNow(){ document.querySelectorAll('.reveal').forEach(el => el.classList.add('in')); }
+// Любая необработанная ошибка JS не должна оставить блоки скрытыми — сразу показываем всё.
+window.addEventListener('error', revealAllNow);
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   ⚙️  КОНФИГ JS — правьте эти значения. Всё остальное можно не трогать.
+   ═══════════════════════════════════════════════════════════════════════════ */
+const CONFIG = {
+  PRICE_PER_NIGHT: 3500,                 // цена за сутки за ОДИН этаж, ₽
+  PHONE: "+7 988 927 00 00",             // телефон для клиентов
+  PHONE_TEL: "+79889270000",             // тот же телефон для ссылки tel:
+
+  // Formspree: заявки уходят на почту владельца. Endpoint уже подключён.
+  // Чтобы сменить ящик — создайте новую форму на formspree.io → New Form
+  // и замените ссылку ниже (формат: https://formspree.io/f/xxxxxxxx).
+  FORMSPREE_ENDPOINT: "https://formspree.io/f/mpqvwpol",
+
+  // ── ЗАНЯТЫЕ ДАТЫ ────────────────────────────────────────────────────────
+  // Сюда вписываете ночи, которые уже забронированы, в формате "ГГГГ-ММ-ДД".
+  // Указывайте КАЖДУЮ занятую ночь (ночь = дата заезда этой ночи).
+  // Пример: гость живёт с 5 по 8 августа 2026 — заняты ночи 5, 6, 7 августа:
+  //   "2026-08-05", "2026-08-06", "2026-08-07"
+  // (ночь выезда 8-го НЕ пишем — днём выезда может заезжать следующий гость).
+  // Форма не даст выбрать период, который пересекается с этими датами.
+  BLOCKED_DATES: [
+    // "2026-08-05", "2026-08-06", "2026-08-07",
+  ]
+};
+
+/* ---------- Подставляем телефон и год из конфига ---------- */
+document.getElementById('priceDisplay').textContent = CONFIG.PRICE_PER_NIGHT.toLocaleString('ru-RU');
+const footPhone = document.getElementById('footPhone');
+footPhone.textContent = CONFIG.PHONE;
+footPhone.href = 'tel:' + CONFIG.PHONE_TEL;
+document.getElementById('year').textContent = new Date().getFullYear();
+
+/* ---------- Кнопка WhatsApp ---------- */
+const waMsg = encodeURIComponent('Здравствуйте! Интересует бронирование коттеджа «Бурон Сердце».');
+document.getElementById('waFloat').href =
+  'https://wa.me/' + CONFIG.PHONE_TEL.replace(/\D/g,'') + '?text=' + waMsg;
+
+/* ---------- Хедер: фон при скролле ---------- */
+const header = document.getElementById('header');
+const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 40);
+window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
+
+/* ---------- Мобильное меню ---------- */
+const burger = document.getElementById('burger');
+const navLinks = document.getElementById('navLinks');
+burger.addEventListener('click', () => {
+  const open = navLinks.classList.toggle('open');
+  header.classList.toggle('menu-open', open);   // чтобы иконку сделать тёмной поверх светлого меню
+  burger.setAttribute('aria-expanded', open);
+});
+navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  navLinks.classList.remove('open'); header.classList.remove('menu-open');
+  burger.setAttribute('aria-expanded', false);
+}));
+
+/* ---------- Reveal при скролле (IntersectionObserver) ---------- */
+if('IntersectionObserver' in window){
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, {threshold:.14, rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+} else {
+  revealAllNow();   // старый браузер без IntersectionObserver — просто показываем всё сразу
+}
+
+// Железная подстраховка: показываем блоки, попавшие в экран, по скроллу и после загрузки —
+// сработает, даже если IntersectionObserver по какой-то причине не отработал на телефоне.
+function revealInView(){
+  document.querySelectorAll('.reveal:not(.in)').forEach(el => {
+    const r = el.getBoundingClientRect();
+    if(r.top < window.innerHeight * 0.92 && r.bottom > 0) el.classList.add('in');
+  });
+}
+window.addEventListener('scroll', revealInView, {passive:true});
+window.addEventListener('load', revealInView);
+revealInView();
+
+/* ═══════════════ ЛОГИКА ФОРМЫ БРОНИРОВАНИЯ ═══════════════ */
+const form      = document.getElementById('bookingForm');
+const checkin   = document.getElementById('checkin');
+const checkout  = document.getElementById('checkout');
+const floorsSel = document.getElementById('floors');
+const guests    = document.getElementById('guests');
+const nightsTxt = document.getElementById('nightsText');
+const totalTxt  = document.getElementById('totalText');
+const hiddenN   = document.getElementById('hiddenNights');
+const hiddenT   = document.getElementById('hiddenTotal');
+
+// Локальная дата в формате "ГГГГ-ММ-ДД" — НЕ по UTC.
+// Иначе в РФ (UTC+3) с полуночи до 3:00 форма разрешала бы выбрать вчерашний день.
+function localDateStr(d = new Date()){
+  const local = new Date(d.getTime() - d.getTimezoneOffset() * 60000);
+  return local.toISOString().split('T')[0];
+}
+// Не даём выбрать прошедшие даты
+const todayStr = localDateStr();
+checkin.min = todayStr; checkout.min = todayStr;
+
+// Склонение слова «ночь»
+function nightWord(n){
+  const a = Math.abs(n) % 100, b = a % 10;
+  if(a>10 && a<20) return 'ночей';
+  if(b>1 && b<5) return 'ночи';
+  if(b===1) return 'ночь';
+  return 'ночей';
+}
+
+// Проверяем, пересекается ли выбранный период с занятыми датами.
+// Возвращает первую занятую ночь из диапазона [заезд, выезд) или null.
+function findBlockedNight(){
+  if(!checkin.value || !checkout.value) return null;
+  const blocked = new Set(CONFIG.BLOCKED_DATES || []);
+  if(blocked.size === 0) return null;
+  const inD = new Date(checkin.value), outD = new Date(checkout.value);
+  for(let d = new Date(inD); d < outD; d.setDate(d.getDate()+1)){
+    const key = d.toISOString().split('T')[0];   // "ГГГГ-ММ-ДД"
+    if(blocked.has(key)) return key;
+  }
+  return null;
+}
+
+// Считаем количество ночей и сумму
+function calc(){
+  const inD = new Date(checkin.value), outD = new Date(checkout.value);
+  let nights = 0;
+  if(checkin.value && checkout.value && outD > inD){
+    nights = Math.round((outD - inD) / 86400000);
+    checkout.min = checkin.value;               // выезд не раньше заезда
+  }
+  const floors = parseInt(floorsSel.value, 10) || 1;
+  const total = nights * CONFIG.PRICE_PER_NIGHT * floors;
+  const blockedNight = findBlockedNight();
+
+  if(nights > 0 && blockedNight){
+    // Период пересекается с занятой датой — бронь недоступна
+    nightsTxt.textContent = 'Эти даты уже заняты — выберите другие';
+    nightsTxt.style.color = 'var(--danger)';
+    totalTxt.textContent = 'Занято';
+    totalTxt.style.color = 'var(--danger)';
+    hiddenN.value = ''; hiddenT.value = '';
+    return {nights, total, blocked:true};
+  }
+
+  nightsTxt.style.color = ''; totalTxt.style.color = '';
+  if(nights > 0){
+    nightsTxt.textContent = `${nights} ${nightWord(nights)} × ${CONFIG.PRICE_PER_NIGHT.toLocaleString('ru-RU')} ₽` + (floors>1 ? ` × ${floors} этажа` : '');
+    totalTxt.textContent = total.toLocaleString('ru-RU') + ' ₽';
+    hiddenN.value = nights; hiddenT.value = total;
+  } else {
+    nightsTxt.textContent = 'Выберите даты, чтобы увидеть сумму';
+    totalTxt.textContent = '—';
+    hiddenN.value = ''; hiddenT.value = '';
+  }
+  return {nights, total, blocked:false};
+}
+[checkin, checkout, floorsSel].forEach(el => el.addEventListener('change', calc));
+
+// Календарь выезда сразу не раньше заезда (не дожидаясь, пока обе даты валидны)
+checkin.addEventListener('change', () => {
+  checkout.min = checkin.value || todayStr;
+  if(checkout.value && checkout.value < checkout.min) checkout.value = '';
+});
+
+// Гостей — не больше 4 на этаж. Лимит зависит от числа выбранных этажей.
+function updateGuestsLimit(){
+  const floors = parseInt(floorsSel.value, 10) || 1;
+  const max = 4 * floors;
+  guests.max = max;
+  document.getElementById('guestsErr').textContent =
+    floors === 1 ? 'Не больше 4 гостей на этаж' : `Не больше ${max} гостей (до 4 на каждый этаж)`;
+  if(parseInt(guests.value, 10) > max) guests.value = max;
+}
+floorsSel.addEventListener('change', updateGuestsLimit);
+updateGuestsLimit();
+
+// Валидация телефона: минимум 10 цифр
+function phoneValid(v){ return (v.match(/\d/g) || []).length >= 10; }
+
+// Пометить/снять ошибку у поля
+function mark(el, ok){ el.closest('.field').classList.toggle('invalid', !ok); return ok; }
+
+/* ---------- Отправка ---------- */
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const {nights, total, blocked} = calc();
+  const status = document.getElementById('formStatus');
+  status.className = 'form-status';
+
+  // Если период пересекается с занятыми датами — не отправляем
+  if(blocked){
+    status.textContent = 'Выбранные даты уже заняты. Пожалуйста, выберите другой период.';
+    status.classList.add('error');
+    checkin.closest('.field').classList.add('invalid');
+    checkout.closest('.field').classList.add('invalid');
+    checkin.focus();
+    return;
+  }
+
+  // Валидация всех полей
+  let ok = true;
+  ok = mark(checkin, !!checkin.value) && ok;
+  const datesOk = !!checkin.value && !!checkout.value && new Date(checkout.value) > new Date(checkin.value);
+  ok = mark(checkout, datesOk) && ok;
+  ok = mark(document.getElementById('name'),  document.getElementById('name').value.trim().length > 1) && ok;
+  ok = mark(document.getElementById('phone'), phoneValid(document.getElementById('phone').value)) && ok;
+  ok = mark(document.getElementById('city'),  document.getElementById('city').value.trim().length > 1) && ok;
+  const maxG = 4 * (parseInt(floorsSel.value,10) || 1);
+  const g = parseInt(guests.value,10);
+  ok = mark(guests, g>=1 && g<=maxG) && ok;
+
+  if(!ok){
+    const firstBad = form.querySelector('.field.invalid input, .field.invalid select');
+    if(firstBad) firstBad.focus();
+    return;
+  }
+
+  // Показываем состояние загрузки
+  const btn = document.getElementById('submitBtn');
+  const oldText = btn.textContent;
+  btn.disabled = true; btn.textContent = 'Отправляем…';
+
+  // Собираем данные
+  const data = new FormData(form);
+  data.append('_subject', 'Новая заявка на бронь — buron_serdtse');
+
+  try{
+    // Подстраховка: если endpoint вдруг сброшен на заглушку — не шлём запрос,
+    // а просто показываем окно подтверждения (демо-режим без отправки письма).
+    if(CONFIG.FORMSPREE_ENDPOINT.includes('ВАШ_ID') || CONFIG.FORMSPREE_ENDPOINT.includes('xxxxxxxx')){
+      await new Promise(r => setTimeout(r, 600));      // имитация отправки
+    } else {
+      const res = await fetch(CONFIG.FORMSPREE_ENDPOINT, {
+        method:'POST', body:data, headers:{'Accept':'application/json'}
+      });
+      if(!res.ok) throw new Error('bad response');
+    }
+    showModal(nights, total);
+    form.reset(); calc();
+  } catch(err){
+    status.textContent = 'Не удалось отправить. Проверьте интернет и попробуйте ещё раз, либо позвоните нам: ' + CONFIG.PHONE;
+    status.classList.add('error');
+  } finally {
+    btn.disabled = false; btn.textContent = oldText;
+  }
+});
+
+/* ---------- Модалка подтверждения ---------- */
+const modal = document.getElementById('modal');
+function fmtDate(v){ return v ? new Date(v).toLocaleDateString('ru-RU',{day:'2-digit',month:'long',year:'numeric'}) : '—'; }
+function showModal(nights, total){
+  const floors = parseInt(floorsSel.value,10) || 1;
+  document.getElementById('modalDetails').innerHTML = `
+    <div><span>Заезд</span><span>${fmtDate(checkin.value)}</span></div>
+    <div><span>Выезд</span><span>${fmtDate(checkout.value)}</span></div>
+    <div><span>Ночей</span><span>${nights} ${nightWord(nights)}</span></div>
+    <div><span>Этажей</span><span>${floors}</span></div>
+    <div><span>Гостей</span><span>${guests.value}</span></div>
+    <div><span>Итого</span><span>${total.toLocaleString('ru-RU')} ₽</span></div>`;
+  modal.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+// Закрытие модалки — по крестику, фону или кнопке (data-close) и по Escape
+document.querySelectorAll('.modal').forEach(m => {
+  m.addEventListener('click', e => { if(e.target.closest('[data-close]')) closeModal(); });
+});
+document.addEventListener('keydown', e => { if(e.key==='Escape') closeModal(); });
+function closeModal(){
+  document.querySelectorAll('.modal.open').forEach(m => m.classList.remove('open'));
+  document.body.style.overflow = '';
+}
+</script>
+</body>
+</html>
